@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+      int m=sc.nextInt();
+      int n=sc.nextInt();
+      long sum=1;
+      if(n==0){
+        sum=1;
+	}
+      for(int i=1;i<=n;i++){
+        sum=sum*m;
+      }
+      System.out.println(sum);
+}
+}
