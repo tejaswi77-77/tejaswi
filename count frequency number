@@ -1,0 +1,28 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int ans = Digi(n,k);
+        System.out.println(ans);
+        
+	}
+    public static int Digi(int n ,int k){
+      int count = 0;
+      int digit= 0;
+      while(n>0){
+      digit = n % 10;
+        if(digit == k){
+          count++;
+        }
+        n = n / 10;
+      }
+      return count;//your code here
+	}
+}
