@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+    int arr[]=new int[n];
+      
+      int sum=0;
+      int i=0;
+      while(i<n) {
+        arr[i]=sc.nextInt();
+        sum=sum+arr[i];
+        i++;
+        }
+      int avg=sum/n;
+      System.out.println(avg);//your code here
+	}
+}
